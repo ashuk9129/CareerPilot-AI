@@ -1,0 +1,225 @@
+/* ==========================
+   APP BACKGROUND
+========================== */
+
+.stApp{
+
+background:
+radial-gradient(
+circle at top right,
+#5B21B6 0%,
+transparent 30%
+),
+
+radial-gradient(
+circle at bottom left,
+#312E81 0%,
+transparent 35%
+),
+
+#0F172A;
+
+}
+
+/* ==========================
+   MAIN CONTAINER
+========================== */
+
+.block-container{
+    max-width:1200px;
+    padding-top:0rem;
+    padding-bottom:0.5rem;
+}
+
+/* ==========================
+   HIDE STREAMLIT UI
+========================== */
+
+#MainMenu{
+    visibility:hidden;
+}
+
+header{
+    visibility:hidden;
+}
+
+footer{
+    visibility:hidden;
+}
+
+/* ==========================
+   HEADINGS
+========================== */
+
+h1,h2,h3{
+    color:white !important;
+}
+
+/* ==========================
+   LOGO
+========================== */
+
+img{
+    display:block;
+    margin:auto;
+}
+
+[data-testid="stImage"]{
+    display:flex;
+    justify-content:center;
+}
+
+[data-testid="stImage"] img{
+    filter:drop-shadow(
+        0px 0px 20px rgba(168,85,247,0.5)
+    );
+}
+
+/* ==========================
+   FILE UPLOADER
+========================== */
+
+/* Upload area center */
+
+[data-testid="stFileUploaderDropzone"] section{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+}
+
+/* Upload button */
+
+[data-testid="stFileUploaderDropzone"] button{
+    margin:auto;
+    font-size:16px !important;
+    font-weight:600 !important;
+    padding:10px 20px !important;
+}
+
+/* 200MB text */
+
+[data-testid="stFileUploaderDropzone"] small{
+    font-size:15px !important;
+}
+/* ==========================
+   BUTTONS
+========================== */
+
+.stButton > button{
+
+    width:100%;
+    height:52px;
+
+    border:none;
+    border-radius:14px;
+
+    color:white;
+    font-weight:600;
+
+    background:linear-gradient(
+        135deg,
+        #4F46E5,
+        #9333EA
+    );
+
+    transition:0.3s;
+}
+
+.stButton > button:hover{
+
+    transform:translateY(-2px);
+
+    box-shadow:
+    0 10px 20px rgba(
+        147,
+        51,
+        234,
+        0.35
+    );
+}
+
+/* ==========================
+   METRIC CARDS
+========================== */
+
+[data-testid="metric-container"]{
+
+    background:rgba(255,255,255,0.05);
+
+    border:1px solid rgba(
+        255,
+        255,
+        255,
+        0.08
+    );
+
+    border-radius:18px;
+
+    padding:18px;
+
+    backdrop-filter:blur(10px);
+}
+
+/* ==========================
+   TEXT AREA
+========================== */
+
+textarea{
+
+    border-radius:15px !important;
+
+    background:rgba(
+        255,
+        255,
+        255,
+        0.04
+    ) !important;
+
+    color:white !important;
+}
+
+/* ==========================
+   ALERTS
+========================== */
+
+[data-testid="stAlert"]{
+    border-radius:14px;
+}
+
+/* ==========================
+   SIDEBAR
+========================== */
+
+[data-testid="stSidebar"]{
+    background:#0b1220;
+}
+
+/* ==========================
+   SCROLLBAR
+========================== */
+
+::-webkit-scrollbar{
+    width:8px;
+}
+
+::-webkit-scrollbar-thumb{
+    background:#4F46E5;
+    border-radius:10px;
+}
+/* AI Assistant Input */
+
+input[type="text"]{
+    border-radius:18px !important;
+    border:1px solid rgba(168,85,247,0.3) !important;
+    background:rgba(255,255,255,0.04) !important;
+    color:white !important;
+    padding:14px !important;
+}
+
+input[type="text"]:focus{
+    border:1px solid #A855F7 !important;
+    box-shadow:0 0 15px rgba(168,85,247,0.3) !important;
+}
+
